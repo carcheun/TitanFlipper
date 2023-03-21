@@ -18,13 +18,14 @@ const createWindow = () => {
     win.maximize();
     win.loadFile('index.html');
 
+    ipcMain.on ("ct-off", (event, args) => {
+        win.setIgnoreMouseEvents(false);
+    });
+    
     ipcMain.on ("ct-on", (event, args) => {
         win.setIgnoreMouseEvents(true, {forward: true});
     });
 
-    ipcMain.on ("ct-off", (event, args) => {
-        win.setIgnoreMouseEvents(false);
-    });
 }
 
 

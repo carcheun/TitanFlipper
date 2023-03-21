@@ -21,3 +21,9 @@
     bottom: 0px;
     left: 0px;
 }
+
+.selLoc {
+    position: absolute;
+    top: 15%;
+    right: 40%;
+}

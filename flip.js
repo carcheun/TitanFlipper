@@ -25,12 +25,10 @@ for (btn of buttons) {
 let sel = document.getElementById('sel_options');
 sel.addEventListener("mouseenter", () => {
     ipcRenderer.send("ct-off");
-    console.log("off");
 });
 
 sel.addEventListener("mouseleave", () => {
     ipcRenderer.send("ct-on");
-    console.log("on");
 });
 
 sel.addEventListener("change", (event)=> {
