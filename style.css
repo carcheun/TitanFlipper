@@ -1,0 +1,23 @@
+.btnTopRight {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.btnTopLeft {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.btnBottomRight {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.btnBottomLeft {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}

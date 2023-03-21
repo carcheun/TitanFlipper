@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Titan Flipper</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!--
+      
+    <button id="ashome1_btn" class="btnTopRight">Titan 1.4 ASHome</button>
+    <button id="ashome2_btn" class="btnTopLeft">Titan-S 1.4 ASHome</button>
+    <button id="asrun1_btn" class="btnBottomRight">Titan 1.4 Autostainerrun</button>
+    <button id="asrun2_btn" class="btnBottomLeft">Titan 1.4-S Autostainerrun</button>
+
+    -->
+    
+    <select name="TitanOptions" id="sel_options">
+      <option value="ashome1">Titan 1.4 ASHome</option>
+      <option value="ashome2">Titan-S 1.4 ASHome</option>
+      <option value="asrun1">Titan 1.4 Autostainerrun</option>
+      <option value="asrun2">Titan 1.4-S Autostainerrun</option>
+    </select>
+
+    <script src="./flip.js"></script>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
