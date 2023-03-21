@@ -1,0 +1,14 @@
+{
+  "name": "titanflipper",
+  "version": "1.0.0",
+  "description": "swap application",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lumatas",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^23.1.4"
+  }
+}
