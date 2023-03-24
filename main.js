@@ -14,18 +14,19 @@ const createWindow = () => {
             contextIsolation: false
         }
     });
-    win.setAlwaysOnTop(true, 'screen');
+    //win.setAlwaysOnTop(true, 'screen');
     win.maximize();
     win.loadFile('index.html');
 
     ipcMain.on ("ct-off", (event, args) => {
         win.setIgnoreMouseEvents(false);
     });
-    
+
     ipcMain.on ("ct-on", (event, args) => {
         win.setIgnoreMouseEvents(true, {forward: true});
     });
-
+    // forward my events thank you
+    //win.setIgnoreMouseEvents(true, {forward: true});
 }
 
 

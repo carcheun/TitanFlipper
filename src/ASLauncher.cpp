@@ -108,12 +108,14 @@ bool ASLauncher::FocusWindow(char* handleBuffer){
         pressed = true;
         keybd_event(VK_MENU, 0, KEYEVENTF_EXTENDEDKEY | 0, 0);
     }
+
     SetForegroundWindow(g_HWND);
     SetFocus(g_HWND);
 
     if (pressed) {
         keybd_event(VK_MENU, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
     }
+
     return true;
 }
 
